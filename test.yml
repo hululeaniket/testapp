@@ -6,8 +6,8 @@
       win_shell: "hostname"
       delegate_to: "{{ target_host }}"
       vars:
-        ansible_user: Ansibleuser
-        ansible_password: Aug@123
+        #ansible_user: Ansibleuser
+        #ansible_password: Aug@123
         #ansible_host: "{{ target_host }}"
         ansible_connection: winrm
         ansible_port: 5986
