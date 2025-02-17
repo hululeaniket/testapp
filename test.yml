@@ -8,7 +8,7 @@
       vars:
         ansible_user: Ansibleuser
         ansible_password: Aug@123
-        ansible_host: "{{ target_host }}"
+        #ansible_host: "{{ target_host }}"
         ansible_connection: winrm
         ansible_port: 5986
         ansible_winrm_server_cert_validation: ignore
