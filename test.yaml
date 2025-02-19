@@ -1,0 +1,12 @@
+---
+- name: Get System Uptime
+  hosts: all
+  gather_facts: yes
+  tasks:
+    - name: Fetch Uptime
+      command: uptime -p
+      register: uptime_output
+
+    - name: Display Uptime
+      debug:
+        msg: "{{ uptime_output.stdout }}"
